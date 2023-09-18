@@ -13,11 +13,16 @@ public class Main {
         String retorno = mochileira.viajar();
         JOptionPane.showMessageDialog(null,retorno);
         // Atribuição dinnamica
-        JOptionPane.showInputDialog("Entre com o nome da pesoa turista:");
+        String nome = JOptionPane.showInputDialog("Entre com o nome da pesoa turista:");
 
         Turista pessoaTurista = new Turista(nome);
         // Saida de dados - nome armazenamento acima
-        System.out.println((pessoaTurista.getNome()));
+        System.out.println(pessoaTurista.getNome());
+        // pedir cpf e mostrar
+        String cpf = JOptionPane.showInputDialog("entre com cpf da pessoa:");
+        //adicionar cpf no pessoa turista
+        pessoaTurista.setCpf(cpf);
+        System.out.println(pessoaTurista.getCpf());
 
 
     }
