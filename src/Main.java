@@ -12,6 +12,13 @@ public class Main {
         // Definir comportamento
         String retorno = mochileira.viajar();
         JOptionPane.showMessageDialog(null,retorno);
+        // Atribuição dinnamica
+        JOptionPane.showInputDialog("Entre com o nome da pesoa turista:");
+
+        Turista pessoaTurista = new Turista(nome);
+        // Saida de dados - nome armazenamento acima
+        System.out.println((pessoaTurista.getNome()));
+
 
     }
 }
